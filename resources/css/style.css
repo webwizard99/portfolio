@@ -326,6 +326,7 @@ footer {
 
 footer a {
   text-shadow: 1px 1px 5px rgba(240, 240, 240, .6);
+  margin-left: 1rem;
 }
 
 .contact {
