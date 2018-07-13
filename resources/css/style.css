@@ -31,9 +31,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 #about {
   min-height: 20rem;
   max-height: auto;
-  background: linear-gradient(rgba(180,180,210,.8), rgba(170, 170, 200, .8));
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: url('../images/schematic.png'), linear-gradient(rgba(180,180,210,.8), rgba(170, 170, 200, .8));
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .general-info {
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .quotebox {
-  background-color: rgba(250, 250, 250, .5);
+  background-color: rgba(250, 250, 250, .6);
   height: auto;
   box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
   display: flex;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .skills {
-  background-color: rgba(250, 250, 250, .5);
+  background-color: rgba(250, 250, 250, .6);
   height: auto;
   box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
   padding-bottom: 1rem;
@@ -76,12 +76,14 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .skill {
-  width: 20%;
+  width: 25%;
   overflow: hidden;
+  font-size: 1.2rem;
 }
 
 .skills h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: rgba(30, 30, 30, .9);
   padding-left: .5rem;
   margin-top: .5rem;
 }
@@ -99,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .skill-level {
   padding-left: 1rem;
-  width: 60%;
+  width: 55%;
   font-family: 'Bree Serif', serif;
   color: rgba(30, 30, 30, .9);
 
@@ -107,11 +109,17 @@ h1, h2, h3, h4, h5, h6, p, span {
 
 .strong {
   font-weight: 400;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 767px)
 {
-  .skills {
-    margin-top: 2rem;
+  .quotebox {
+    margin-top: 3rem;
   }
+
+  .skills {
+    margin-top: 8rem;
+  }
+
 }
