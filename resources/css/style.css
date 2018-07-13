@@ -61,7 +61,7 @@ p, span {
   overflow:hidden;
 }
 
-.quotebox span, .quotebox i {
+.quotebox span {
   font-family: 'Bree Serif', serif;
   font-size: 2rem;
   color: rgba(30, 30, 30, .9);
@@ -91,10 +91,16 @@ p, span {
 }
 
 .skills h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: rgba(30, 30, 30, .9);
-  padding-left: .5rem;
-  margin-top: .5rem;
+  padding-left: 2.8rem;
+  margin-top: 1rem;
+}
+
+.skills .hr {
+  width: 80%;
+  height: 2px;
+  border-bottom: 2px solid rgba(30, 30, 30, .8);
 }
 
 .skills .cog {
