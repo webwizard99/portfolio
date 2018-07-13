@@ -192,7 +192,7 @@ p, span {
 }
 
 .trackster-preview {
-  background: url('../images/topleft-glare.png'), url('../images/trackster-preview-button.jpg');
+  background: url('../images/topleft-glare.png'), url('../images/trackster-preview-button.JPG');
   background-size: contain;
 }
 
@@ -234,7 +234,7 @@ p, span {
 }
 
 .project-body .trackster-preview {
-  background: url('../images/trackster-preview.jpg');
+  background: url('../images/trackster-preview.JPG');
   background-size: cover;
 }
 
