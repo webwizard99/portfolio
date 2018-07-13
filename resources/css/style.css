@@ -99,7 +99,7 @@ i {
 }
 
 .skill {
-  width: 25%;
+  /* width: 25%; */
   overflow: hidden;
   font-size: 1.2rem;
 }
@@ -130,7 +130,7 @@ i {
 
 .skill-level {
   padding-left: 1rem;
-  width: 55%;
+  /* width: 55%; */
   font-family: 'Bree Serif', serif;
   color: rgba(30, 30, 30, .9);
 
@@ -141,7 +141,7 @@ i {
   font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 1067px)
 {
   .quotebox {
     margin-top: 3rem;
