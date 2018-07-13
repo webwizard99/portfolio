@@ -184,6 +184,7 @@ p, span {
   height: auto;
   width: 45%;
   border-radius: 50%;
+  border: 1px solid rgba(30, 30, 30, .6);
 }
 
 .robopig-preview {
