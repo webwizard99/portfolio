@@ -1,0 +1,117 @@
+:root {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-family: 'Abril Fatface', serif;
+}
+
+#splash {
+  height: 22rem;
+  background: linear-gradient(rgba(30, 30, 30, .1), rgba(30, 30, 30, .15)), url('../images/wired-electronics.jpg');
+  background-color: rgba(230,230, 240, .95);
+  background-size: 145%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 2px groove rgba(160, 130, 100, .9);
+}
+
+#splash h1 {
+  background-color: rgba(250, 250, 250, .5);
+  color: rgba(30, 30, 30, .9);
+  max-width: 32rem;
+  min-width: 20rem;
+  font-size: 2rem;
+  padding: .8rem;
+  margin-top: 6rem;
+  text-shadow: 1px 1px 3px rgba(30, 30, 30, .7);
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
+}
+
+#about {
+  min-height: 20rem;
+  max-height: auto;
+  background: linear-gradient(rgba(180,180,210,.8), rgba(170, 170, 200, .8));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.general-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.quotebox {
+  background-color: rgba(250, 250, 250, .5);
+  height: auto;
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
+  display: flex;
+  align-items: center;
+  overflow:hidden;
+}
+
+.quotebox span, .quotebox i {
+  font-family: 'Bree Serif', serif;
+  font-size: 2rem;
+  color: rgba(30, 30, 30, .9);
+  padding: .5rem;
+}
+
+.cog {
+  max-height:3.5rem;
+  flex-shrink: 1;
+  width: auto;
+  opacity: .8;
+}
+
+.skills {
+  background-color: rgba(250, 250, 250, .5);
+  height: auto;
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow:hidden;
+}
+
+.skill {
+  width: 20%;
+  overflow: hidden;
+}
+
+.skills h2 {
+  font-size: 1.8rem;
+  padding-left: .5rem;
+  margin-top: .5rem;
+}
+
+.skills .cog {
+  max-height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.skill-container {
+  padding: .5rem;
+  display: flex;
+
+}
+
+.skill-level {
+  padding-left: 1rem;
+  width: 60%;
+  font-family: 'Bree Serif', serif;
+  color: rgba(30, 30, 30, .9);
+
+}
+
+.strong {
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px)
+{
+  .skills {
+    margin-top: 2rem;
+  }
+}
