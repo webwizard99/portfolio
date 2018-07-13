@@ -2,13 +2,23 @@
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
-  font-family: 'Abril Fatface', serif;
+h1, h2, h3, h4, h5, h6  {
+  font-family: 'Abril Fatface', sans-serif;
+}
+
+p, span {
+  font-family: 'Bree Serif', serif;
+}
+
+
+.white {
+  background-color: rgba(250, 250, 250, .6);
+  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
 }
 
 #splash {
-  height: 22rem;
-  background: linear-gradient(rgba(30, 30, 30, .1), rgba(30, 30, 30, .15)), url('../images/wired-electronics.jpg');
+  height: 28rem;
+  background: linear-gradient(30deg, rgba(30, 30, 30, .1), rgba(30, 30, 30, .25) 80%), url('../images/wired-electronics.jpg');
   background-color: rgba(230,230, 240, .95);
   background-size: 145%;
   background-repeat: no-repeat;
@@ -23,12 +33,15 @@ h1, h2, h3, h4, h5, h6, p, span {
   min-width: 20rem;
   font-size: 2rem;
   padding: .8rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
+  margin-left: 2rem;
   text-shadow: 1px 1px 3px rgba(30, 30, 30, .7);
   box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
 }
 
-#about {
+/* about styling */
+
+#about, #projects {
   min-height: 20rem;
   max-height: auto;
   background: url('../images/schematic.png'), linear-gradient(rgba(180,180,210,.8), rgba(170, 170, 200, .8));
@@ -37,14 +50,12 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .general-info {
-  margin-top: 2rem;
+  margin-top: 6rem;
   margin-bottom: 2rem;
 }
 
 .quotebox {
-  background-color: rgba(250, 250, 250, .6);
   height: auto;
-  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
   display: flex;
   align-items: center;
   overflow:hidden;
@@ -65,9 +76,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .skills {
-  background-color: rgba(250, 250, 250, .6);
   height: auto;
-  box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
   padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
@@ -122,4 +131,159 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin-top: 8rem;
   }
 
+}
+
+
+/* ----------------------- */
+/* -- projects styling     */
+/* ----------------------- */
+
+#projects {
+  background: url('../images/schematic.png'), linear-gradient(rgba(170, 170, 200, .8), rgba(180,180,210,.8));
+  height: auto;
+  padding-bottom: 4rem;
+}
+
+.project-head-main {
+  font-size: 2.5rem;
+  padding: 1rem;
+  margin-top: 8rem;
+}
+
+.project {
+  /* margin-left: 2%;
+  margin-right: 2%; */
+  margin-top: 1.5rem;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.project-head {
+  background: url('../images/white_cog.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+  width: 8rem;
+  min-height: 6rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-preview {
+  min-height: 3.6rem;
+  height: auto;
+  width: 45%;
+  border-radius: 50%;
+}
+
+.robopig-preview {
+  background: url('../images/topleft-glare.png'), url('../images/robopig-preview.jpg');
+  background-size: contain;
+}
+
+.trackster-preview {
+  background: url('../images/topleft-glare.png'), url('../images/trackster-preview-button.jpg');
+  background-size: contain;
+}
+
+.jumpstart-preview {
+  background: url('../images/topleft-glare.png'), url('../images/jumpstart-preview.jpg');
+  background-size: contain;
+}
+
+.project-body {
+  height: 12rem;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  border-radius: 5rem 0 0 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project:nth-child(2) {
+  margin-top: 1rem;
+}
+
+.project:nth-child(2) > .project-head, .project:nth-child(2) > .project-body {
+  margin-top: 2rem;
+}
+
+
+.project-description {
+  margin-left: 3rem;
+  height: 100%;
+  width: 60%;
+}
+
+.profile-links {
+  margin: auto;
+}
+
+.profile-links a {
+  margin-right: 1.5rem;
+}
+
+.project-body .trackster-preview {
+  background: url('../images/trackster-preview.jpg');
+  background-size: cover;
+}
+
+.project-body .robopig-preview {
+  background: url('../images/robopig-preview.jpg');
+  background-size: cover;
+}
+
+.project-body .jumpstart-preview {
+  background: url('../images/jumpstart-preview.jpg');
+  background-size: cover;
+}
+
+.preview-expanded {
+  width: 20%;
+  justify: right;
+  margin: 1rem;
+  border: 1px solid rgba(30,30,30, .6);
+
+}
+
+@media only screen and (max-width: 767px) {
+  .project-body {
+    height: 20rem;
+  }
+
+  .preview-expanded {
+    display: none;
+  }
+
+  .project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+}
+
+/* footer styling */
+
+footer {
+  background: url('../images/schematic.png'), linear-gradient(rgba(70, 70, 100, .8), rgba(80,80,110,.8));
+  height: 10rem;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  border-top: 2px groove rgba(160, 130, 100, .9);
+}
+
+.contact {
+  color: rgba(250, 250, 250, .95);
+  text-shadow: 1px -1px 3px rgba(30, 30, 30, .6);
+  margin-left: 1.5rem;
+  padding: 1rem;
+}
+
+.black {
+  background-color: rgba(80, 80, 80, .3);
 }
