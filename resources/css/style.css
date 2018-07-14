@@ -20,7 +20,7 @@ i {
 }
 
 #splash {
-  height: 28rem;
+  height: 66vh;
   background: linear-gradient(30deg, rgba(30, 30, 30, .1), rgba(30, 30, 30, .25) 80%), url('../images/wired-electronics.jpg');
   background-color: rgba(230,230, 240, .95);
   background-size: 145%;
@@ -32,11 +32,11 @@ i {
 #splash h1 {
   background-color: rgba(250, 250, 250, .5);
   color: rgba(30, 30, 30, .9);
-  max-width: 32rem;
+  max-width: 32%;
   min-width: 20rem;
-  font-size: 2rem;
-  padding: .8rem;
-  margin-top: 8rem;
+  font-size: 2.4rem;
+  padding: 1rem;
+  margin-top: 12vh;
   margin-left: 2rem;
   text-shadow: 1px 1px 3px rgba(30, 30, 30, .7);
   box-shadow: 3px 3px 5px rgba(30, 30, 30, .4);
@@ -187,39 +187,59 @@ i {
 .project {
   /* margin-left: 2%;
   margin-right: 2%; */
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   display: flex;
   margin-bottom: 2rem;
 }
 
 .project-head {
-  background: url('../images/white_cog.svg');
+  background: url('../images/white_cog_shdw.svg');
+  position: relative;
+  transform: translate(2px,2px);
+  transition: all 1.5s;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 4rem;
   margin-left: 1.5rem;
-  width: 8rem;
-  min-height: 6rem;
+  width: 12rem;
+  min-height: 10rem;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.project-head:hover {
+  transform: translate(2px,2px) rotate(25deg);
+}
+
+.project-head-solid {
+  height: 100%;
+  width: 100%;
+  background: url('../images/white_cog.svg');
+  position: relative;
+  transform: translate(-2px, -2px);
+  transition: all 1.5s;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* .project-head:hover .project-head-solid {
+  transform: translate(2px,2px) rotate(25deg);
+} */
+
 .project-preview {
-  min-height: 3.6rem;
+  min-height: 5.4rem;
   height: auto;
   width: 45%;
   border-radius: 50%;
   border: 1px solid rgba(30, 30, 30, .6);
-}
-
-.shadowed {
-    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
 .robopig-preview {
@@ -238,7 +258,7 @@ i {
 }
 
 .project-body {
-  height: 12rem;
+  height: 16rem;
   margin-top: 4rem;
   margin-left: 3rem;
   border-radius: 5rem 0 0 5rem;
@@ -293,8 +313,13 @@ i {
 }
 
 @media only screen and (max-width: 767px) {
-  .project-head {
+  .project-head-solid {
     margin-left: .5rem;
+    width: 8rem;
+  }
+
+  .project-preview {
+    min-height: 3.6rem;
   }
 
   .project-body {
@@ -312,6 +337,10 @@ i {
     justify-content: space-around;
 
   }
+}
+
+@media only screen and (max-width: 1036px) {
+
 }
 
 /* footer styling */
