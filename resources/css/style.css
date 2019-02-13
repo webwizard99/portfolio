@@ -20,8 +20,8 @@ i {
 }
 
 #splash {
-  height: 66vh;
-  background: linear-gradient(30deg, rgba(30, 30, 30, .1), rgba(30, 30, 30, .25) 80%), url('../images/wired-electronics.jpg');
+  height: 36vh;
+  background: linear-gradient(30deg, rgba(30, 30, 30, .4), rgba(30, 30, 30, .55) 80%), url('../images/wired-electronics.jpg');
   background-color: rgba(230,230, 240, .95);
   background-size: 145%;
   background-repeat: no-repeat;
@@ -29,10 +29,15 @@ i {
   border-bottom: 2px groove rgba(160, 130, 100, .9);
 }
 
+.splash-content {
+  width: 960px;
+  margin: auto;
+}
+
 #splash h1 {
   background-color: rgba(250, 250, 250, .5);
   color: rgba(30, 30, 30, .9);
-  max-width: 32%;
+  max-width: 60%;
   min-width: 20rem;
   font-size: 2.4rem;
   padding: 1rem;
@@ -47,9 +52,15 @@ i {
     background-size: 220%;
   }
 
+  .splash-content {
+    width: 80%;
+    margin: auto;
+  }
+
   #splash h1 {
-    max-width: 90%;
+    max-width: 70%;
     margin-left: 0.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -99,7 +110,6 @@ i {
 }
 
 .skill {
-  /* width: 25%; */
   overflow: hidden;
   font-size: 1.2rem;
 }
@@ -125,7 +135,7 @@ i {
 .skill-container {
   padding: .5rem;
   display: flex;
-
+  width: 80%;
 }
 
 .skill-level {
@@ -156,7 +166,7 @@ i {
   }
 
   .skill {
-    width: 80%;
+    
   }
 
   .skill-level {
@@ -242,25 +252,30 @@ i {
   border: 1px solid rgba(30, 30, 30, .6);
 }
 
+.breakout-preview {
+  background: url('../images/breakout_level_maker.JPG');
+  background-size: cover;
+}
+
 .robopig-preview {
-  background: url('../images/topleft-glare.png'), url('../images/robopig-preview.jpg');
+  background: url('../images/robopig-preview.jpg');
   background-size: contain;
+}
+
+.minesweeper-preview {
+  background: url('../images/minesweeper.JPG');
+  background-size: cover;
 }
 
 .trackster-preview {
-  background: url('../images/topleft-glare.png'), url('../images/trackster-preview-buttonb.jpg');
-  background-size: contain;
-}
-
-.jumpstart-preview {
-  background: url('../images/topleft-glare.png'), url('../images/jumpstart-preview.jpg');
+  background: url('../images/trackster-preview-buttonb.jpg');
   background-size: contain;
 }
 
 .project-body {
   height: 16rem;
   margin-top: 4rem;
-  margin-left: 3rem;
+  /* margin-left: 3rem; */
   border-radius: 5rem 0 0 5rem;
   display: flex;
   justify-content: space-between;
@@ -305,8 +320,8 @@ i {
 }
 
 .preview-expanded {
-  width: 20%;
-  justify: right;
+  width: 40%;
+  justify-self: right;
   margin: 1rem;
   border: 1px solid rgba(30,30,30, .6);
 

@@ -17,7 +17,9 @@
   </head>
   <body>
     <section id="splash" class="container-fluid">
-      <h1>Michael Bragg, Web Developer</h1>
+      <div class="splash-content">
+        <h1>Michael Bragg, Web Developer</h1>
+      </div>
     </section>
     <main>
       <section id="about" class="container-fluid">
@@ -33,23 +35,23 @@
             <div class="hr"></div>
             <div class="skill-container row">
               <img class="cog col-xs-2" src="./resources/images/black_cog.svg"/>
-              <span class="skill col-xs-4">JavaScript</span>
-              <span class="skill-level col-xs-6"><span class="strong">Intermediate:</span> DOM Manipulation, Functional Programming, Closures, IIFE for public/private access</span>
+              <div class="col-xs-6"><span class="skill">JavaScript</span></div>
+              <span class="skill-level col-xs-4"> Let's do it in JS!!</span>
             </div>
             <div class="skill-container row">
               <img class="cog col-xs-2" src="./resources/images/black_cog.svg"/>
-              <span class="skill col-xs-4">HTML5</span>
-              <span class="skill-level col-xs-6"><span class="strong">Intermediate:</span> Headings, Semantic tags, iframes, Video, Audio, accessibiilty, forms (still need practice)</span>
+              <div class="col-xs-6"><span class="skill">React</span></div>
+              <span class="skill-level col-xs-4"> Give me props!</span>
             </div>
             <div class="skill-container row">
               <img class="cog col-xs-2" src="./resources/images/black_cog.svg"/>
-              <span class="skill col-xs-4">CSS3</span>
-              <span class="skill-level col-xs-6"><span class="strong">Intermediate:</span> Transitions, floats, flex-box, psuedo-selectors, animations</span>
+              <div class="col-xs-6"><span class="skill">HTML5/CSS3</span></div>
+              <span class="skill-level col-xs-4"> The foundation!</span>
             </div>
             <div class="skill-container row">
               <img class="cog col-xs-2" src="./resources/images/black_cog.svg"/>
-              <span class="skill col-xs-4">Bootstrap</span>
-              <span class="skill-level col-xs-6"><span class="strong">Beginner:</span> Using columns and rows for responsive design/ prototyping.</span>
+              <div class="col-xs-6"><span class="skill">Bootstrap</span></div>
+              <span class="skill-level col-xs-4"> Yass!</span>
             </div>
           </div>
         </div>
@@ -61,20 +63,28 @@
           <h2 class="project-head-main white col-xs-8 col-xs-offset-1 col-md-2">Projects</h2>
         </div>
         <div class="row project">
-          <!-- gear object -->
-          <div class="project-head">
-            <div class="project-head-solid">
-              <div class="project-preview robopig-preview">
-
+            <!-- project -->
+            <div class="project-body white col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+              <div class="project-description">
+                <h2>Breakout Level Maker</h2>
+                <p>Made with React. (Under development.) Current functionality: Make sets of levels to play through, launch game in app, and save everything in localstorage.</p>
+                <div class="profile-links">
+                  <a href="http://webwizard99-breakout-level-editor.s3-website-us-west-1.amazonaws.com/?fbclid=IwAR3fD3SnsFUPkJ7EIFIEry6nDstz3ljhzcL1liiNVKVkxIyRQ2sjJ-B54jg" target="_blank">visit site</a>
+                  <a href="https://github.com/webwizard99/breakout-level-editor" target="_blank">github</a>
+                </div>
+              </div>
+              <div class="preview-expanded breakout-preview">
+                <div class="">
+                </div>
               </div>
             </div>
-          </div>
+        </div>
+        <div class="row project">
           <!-- project -->
-          <div class="project-body white col-xs-8 col-sm-8">
+          <div class="project-body white col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
             <div class="project-description">
               <h2>RoboPig</h2>
-              <p>A game of chance and strategy. Uses functional programming in JavaScript.</p>
-              <p><span class="strong">Lessons learned:</span> Would do less positioning with JavaScript. Can do private/public variables and methods with IFFEs.</p>
+              <p>A game of chance and strategy. Made with JavaScript.</p>
               <div class="profile-links">
                 <a href="https://webwizard99.github.io/robopigV2/" target="_blank">visit site</a>
                 <a href="https://github.com/webwizard99/robopigV2" target="_blank">github</a>
@@ -86,22 +96,33 @@
             </div>
           </div>
         </div>
-        <!-- project row -->
-        <div class="row project">
-          <!-- gear object -->
-          <div class="project-head">
-            <div class="project-head-solid">
-              <div class="project-preview trackster-preview">
 
+        <div class="row project">
+            <!-- project -->
+            <div class="project-body white col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+              <div class="project-description">
+                <h2>Minesweeper</h2>
+                <p>It's minesweeper! Made with JavaScript.</p>
+                <div class="profile-links">
+                  <a href="https://webwizard99.github.io/minesweeper/" target="_blank">visit site</a>
+                  <a href="https://github.com/webwizard99/minesweeper" target="_blank">github</a>
+                </div>
+              </div>
+              <div class="preview-expanded minesweeper-preview">
+                <div class="">
+                </div>
               </div>
             </div>
-          </div>
+        </div>
+
+        <!-- project row -->
+        <div class="row project">
+          
           <!-- project -->
-          <div class="project-body white col-xs-8 col-sm-8">
+          <div class="project-body white col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
             <div class="project-description">
               <h2>Trackster</h2>
-              <p>Based on a tutorial, fleshed out with sorting and refinement of Ajax calls. Using array methods in JavaScript</p>
-              <p><span class="strong">Lessons learned:</span> Array methods, working with Ajax.</p>
+              <p>One of several sites I've made based on a tutorial using Ajax calls to query an API.</p>
               <div class="profile-links">
                 <a href="https://webwizard99.github.io/trackster/" target="_blank">visit site</a>
                 <a href="https://github.com/webwizard99/trackster" target="_blank">github</a>
@@ -113,29 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="row project">
-          <!-- gear object -->
-          <div class="project-head">
-            <div class="project-head-solid">
-              <div class="project-preview jumpstart-preview">
-
-              </div>
-            </div>
-          </div>
-          <!-- project -->
-          <div class="project-body white col-xs-8 col-sm-8">
-            <div class="project-description">
-              <h2>Jumpstart</h2>
-              <p>Based on a tutorial. Mainly an excersize in using a library.</p>
-              <div class="profile-links">
-                <a href="https://webwizard99.github.io/jumpstart/" target="_blank">visit site</a>
-                <a href="https://github.com/webwizard99/jumpstart" target="_blank">github</a>
-              </div>
-            </div>
-            <div class="preview-expanded jumpstart-preview">
-            </div>
-          </div>
-        </div>
+        
       </section>
       <footer>
         <div class="contact col-xs-3">
